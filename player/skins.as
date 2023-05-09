@@ -1,0 +1,1 @@
+http://support.jwplayer.com/customer/portal/articles/1406968-using-jw-player-skins

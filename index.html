@@ -1,0 +1,499 @@
+﻿
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>On movies</title>
+<link rel="shortcut icon" type="image/x-icon" href="css/images/favicononmovies.ico">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="fonts/foundation-icons.css" />
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="scripts/modernizr-2.6.1.min.js"></script>
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/federo:n4:default;inder:n4:default;hammersmith-one:n4:default;poller-one:n4:default;prosto-one:n4:default;sigmar-one:n4:default;orbitron:n3:default;baumans:n4:default.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.contentcarousel.js"></script>
+<script type="text/javascript" src="scripts/scripts.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+
+		<meta property="title" content="onmovies.pt - Os seus filmes Online HD Legendados" />
+		<meta property="type" content="website" />
+		<meta property="url" content="" />
+		<meta property="image" content="Logo/150x0150.png" />
+		<meta property="site_name" content="onmovies.pt " />
+		<meta name="description" content="Os seus filmes Online" />
+		
+
+</head>
+
+<body>
+<div class="wrapper">
+   <header>
+    <div class="header">
+            <div class="top_bar">
+
+
+           	  <div class="clt_bar"> 
+                <a id="lg-in">Login</a>
+            </div>
+            <form id="lg-form" name="lg-form" action="" method="POST">
+                <div id="block">
+                    <label id="user" for="name" class="fi-torso"></label>
+                  <input type="text" name="username" id="name" placeholder="Username" required/>
+                    <label id="pass" for="password" class="fi-key"></label>
+                  <input type="password" name="password" id="password" placeholder="Password" required />
+                    <input type="submit" id="submit" name="submit" value="&#10145;" />
+                    <a href="register.html">Não tem conta? Clique aqui!</a>
+                </div>
+            </form>
+            
+           
+            
+      </div>
+            <hr id="line">
+     <a href="index.php"><h1 id="logo"></h1></a> <!--Corrigir: não fica fixo -->
+            <div class="shell">
+            <a id="search-icon" ></a>
+                     <div class="search-box" id="box">
+                        <button type="submit" class="srch_button"></button>
+                        <input type="search" value="" placeholder="Pesquisar.." class="srch_box" />
+                    </div> 
+
+            <ul class="menu">
+                <li><a href="index.html" class="active">Ínicio</a></li>
+                <li><a href="movies.html" >Filmes</a></li>
+                <li><a href="categories.html" id="cat">Categorias</a>
+                  <ul class="submenu">
+                    <li><a href="#"> <b> Ação</b></a></li>
+                   <li> <a href="#"> <b>Animação</b></a></li>
+                   <li> <a href="#"> <b>Aventura</b></a></li>
+                   <li> <a href="#"> <b>Comédia</b></a></li>
+                   <li> <a href="#"> <b>Comédia R.</b></a></li>
+                   <li> <a href="#"> <b>Corrida</b></a></li>
+                   <li> <a href="#"> <b>Documentário</b></a></li>
+                   <li> <a href="#"> <b>Drama</b></a></li>
+                   <li> <a href="#"> <b>Ficção C.</b></a></li>
+                   <li> <a href="#"> <b>Guerra</b></a></li>
+                   <li> <a href="#"> <b>Nacional</b></a></li>
+                   <li> <a href="#"> <b>Policial</b></a></li>
+                   <li> <a href="#"> <b>Romance</b></a></li>
+                   <li> <a href="#"> <b>Suspense</b></a></li>
+                   <li> <a href="#"> <b>Terror</b></a></li>
+                  </ul>
+                </li>
+                <li><a href="requests.html" >Pedidos</a></li>                   
+                <li><a href="news.html" >Noticias</a></li>
+                <li><a href="help.html" >Ajuda</a></li>
+            </ul>
+      </div>
+     </div>
+
+  </header> 
+
+
+</div>
+     		    <div class="slider-wrapper">
+        <div id="slider">
+            <div class="slide1">
+                <img src="css/images/slider/1.jpg" alt="Agentes Universitários" />
+            </div>
+            <div class="slide2">
+                <img src="css/images/slider/2.jpg" alt="Noé" />
+            </div>
+            <div class="slide3">
+                <img src="css/images/slider/3.jpg" alt="Maléfica" />
+            </div>
+            <div class="slide4">
+                <img src="css/images/slider/4.jpg" alt="Marretas" />
+            </div>
+            <div class="slide5">
+                <img src="css/images/slider/5.jpg" alt="Lucy" />
+            </div>
+        </div>
+        <div id="slider-direction-nav"></div>
+        <div id="slider-control-nav"></div>
+    </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav',
+        });
+    });
+			   </script>    
+               
+    <div class="shell">
+    <div class="content">
+    	<div class="week-mov dv-style">
+        	<h1>Filme da Semana</h1>
+                
+            <div class="week-cont">
+            	<div class="week-img load-img"><a href="mv-pages/movie.html=Transformers_age_of_the_Extinction.html"><img src="css/images/Week-movie/week-mov.jpg" alt="Transformers:A Era da Extinção"/></a></div>
+
+
+ <div class="week-trailer">
+               <div class="week-play"></div>
+                <a class="trailer" href="http://www.youtube.com/v/r8HPIH5JCak?theme=light&color=whitefs=1&amp;autoplay=1" title=" Transformers:Era da Extinção"><img src="css/images/Week-movie/trailer.jpg" alt=""/></a>
+        </div>
+        
+       <div class="week-images">
+        <a href="css/images/Week-movie/image.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image.jpg" alt=""/></a>
+        <a href="css/images/Week-movie/image2.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image2.jpg" alt=""/></a>
+        <a href="css/images/Week-movie/image3.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image3.jpg" alt=""/></a>
+        <a href="css/images/Week-movie/image4.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image4.jpg" alt=""/></a>
+        <a href="css/images/Week-movie/image5.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image5.jpg" alt=""/></a>
+        <a href="css/images/Week-movie/image6.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image6.jpg" alt=""/></a>
+        <a href="css/images/Week-movie/image7.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image7.jpg" alt=""/></a>
+        <a href="css/images/Week-movie/image8.jpg"  class="fancy-images" rel="gallery"><img src="css/images/Week-movie/image8.jpg" alt=""/></a>
+        
+        </div>
+        
+            	<div class="week-info">
+                	 <li><h2>Transformers: A era da extinção (2014)</h2></li>
+						 <hr>
+                   <h3><b>Titulo Original:</b> Transforsmers: Age of Extinction</h3>
+                   		<div class="logos" ><!-- Meter transição -->
+             <a href="#"><div class="logo1"><img src="css/images/IMDB.png" alt="imdb" /></div></a>
+                        </div>
+                   		<a class="about"><b>Gênero:</b> Generos </a>
+                        <a class="about"><b>Diretor:</b> Nome do Diretor </a>
+                        <a class="about"><b>Atores:</b> Nome dos Autores </a>
+                        <a class="about"><b>IMDB:</b> 7,5 </a>
+
+                    <a>Alguns anos após o grande confronto entre Autobots e Decepticons em Chicago, os gigantescos robôs alienígenas desapareceram. Eles são atualmente caçados pelos humanos, que não desejam passar por apuros novamente. Quando Cade (Mark Wahlberg) encontra um caminhão abandonado, ele jamais poderia imaginar que o veículo é na verdade Optimus Prime, o líder dos Autobots. Muito menos que, ao ajudar a trazê-lo de volta à vida, Cade e sua filha Tessa (Nicola Peltz) entrariam na mira das autoridades americanas.</a>
+                <div class="button"> <a href="mv-pages/movie.html=Transformers_age_of_the_Extinction.html">Ver Filme</a> </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <br><br><br>
+        
+        
+      <div class="slider-carousel dv-style">
+        <h1>Filmes Recentes</h1>
+        				<div id="ca-container" class="ca-container">
+				<div class="ca-wrapper">
+					<div class="ca-item">
+                    <div class="media"><img src="css/images/Covers/thumb.jpg" alt="Malefica" /><div class="thumb"></div>
+                        <div class="cont-icon">
+                            <div class="icon-info">
+                                    <div id="arrow"></div>                                     
+                                    <div class="cont-info">
+                                     	<h1>Maléfica</h1>
+                                        <a><b> Género:</b> Aventura</a>
+                                        <a><b> Sinopse:</b>
+                                        A história da vilã mais icónica do clássico de 1959 da Disney "A Bela Adormecida" e os elementos da sua traição acabam por lhe transformar o coração puro em pedra. Determinada em conseguir vingança e em proteger o reino da floresta que governa, Maléfica lança uma cruel maldição sobre Aurora, a filha recém-nascida do rei. À medida que a criança cresce, Aurora é apanhada no meio do conflito fervilhante entre o reino da floresta que aprendeu a amar e o reino humano ao qual pertence o seu legado. </a>
+                              </div>
+                          </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/vi_1fwKOB_8?theme=light&color=whitefs=1&amp;autoplay=1" title=" Maléfica"></a>
+                            <a href="#"><div class="icon-play"></div></a>
+                        </div>
+                      <div class="mov-title"><a href="#"> Maléfica </a></div>
+                    
+                    </div>
+					</div>
+                    
+					<div class="ca-item ">
+                    <div class="media"><img src="css/images/Covers/thumb12.jpg" alt="Guadiões da Galáxia" /><div class="thumb"></div>
+                        <div class="cont-icon">
+                            <div class="icon-info">
+                                    <div id="arrow"></div>                                     
+                                    <div class="cont-info">
+                                     	<h1>Guadiões da Galáxia</h1>
+                                        <a><b> Género:</b> Ação | Aventura | Ficção Cientifica</a>
+                                        <a><b> Sinopse:</b>
+                                       Para fugir do sempre persistente Ronan, Peter é forçado a uma difícil missão com um quarteto de desajustados: Rocket Raccoon um guaxinim atirador, Groot um humanoide em forma de árvore, a mortal e enigmática Gamora e o vingativo Drax. Mas quando Peter descobre o verdadeiro poder de uma "Orb" e a ameaça que ele impõe ao cosmos, ele deve fazer o seu melhor para guiar seus rivais para uma última e desesperada resistência com o futuro da Galáxia na balança. </a></div>
+                          </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/8VN_l57QWyQ?theme=light&color=whitefs=1&amp;autoplay=1" title=" Guadiões da Galáxia"></a>
+                            <a href="#"><div class="icon-play"></div></a>
+                        </div>
+                      <div class="mov-title"><a href="#"> Guadiões da Galáxia </a></div>
+                    </div>
+				</div>
+                    
+					<div class="ca-item ">
+                    <div class="media"><img src="css/images/Covers/thumb2.jpg" alt="Divergente" /><div class="thumb"></div>
+                        <div class="cont-icon">
+                            <div class="icon-info">
+                                    <div id="arrow"></div>                                     
+                                    <div class="cont-info">
+                                     	<h1>Divergente</h1>
+                                        <a><b> Género:</b> Ação | Romance | Ficção Cientifica</a>
+                                        <a><b> Sinopse:</b>
+                                       Beatrice Prior, uma adolescente com uma mente especial, descobre que sua vida está ameaçada quando um líder autoritário pretende exterminar a sua espécie e controlar uma sua sociedade dividida. </a></div>
+                          </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/B_fty0k6SNI?theme=light&color=whitefs=1&amp;autoplay=1" title="Divergente"></a>
+                            <a href="#"><div class="icon-play"></div></a>
+                        </div>
+                      <div class="mov-title"><a href="#"> Divergente </a></div>
+                    
+                    </div>
+					</div>
+                    
+					<div class="ca-item ">
+                    <div class="media"><img src="css/images/Covers/thumb4.jpg" alt="Jackass: Avô Sem vergonha" /><div class="thumb"></div>
+                        <div class="cont-icon">
+                            <div class="icon-info">
+                                    <div id="arrow"></div>                                     
+                                    <div class="cont-info">
+                                     	<h1>Jackass: Avô Sem vergonha</h1>
+                                        <a><b> Género:</b> Comédia </a>
+                                        <a><b> Sinopse:</b>
+                                      Irving Zisman (Johnny Knoxville) é um senhor de 86 anos que viaja ao redor dos Estados Unidos ao lado de seu neto Billy, de apenas oito anos. Durante o percurso ele permite que o garoto fume, ofenda as pessoas e beba bebidas alcóolicas, o que gera protestos das pessoas à sua volta.
+ </a></div>
+                          </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/_aEl9jeG0ss?theme=light&color=whitefs=1&amp;autoplay=1" title=" Jackass: Avô Sem vergonha"></a>
+                            <a href="#"><div class="icon-play"></div></a>
+                        </div>
+                      <div class="mov-title"><a href="#"> Jackass: Avô Sem vergonha</a></div>
+                    </div>
+					</div>
+                    
+					<div class="ca-item ">
+                    <div class="media"><img src="css/images/Covers/thumb5.jpg" alt="WWZ: Guerra Mundial" /><div class="thumb"></div>
+                        <div class="cont-icon">
+                            <div class="icon-info">
+                                    <div id="arrow"></div>                                     
+                                    <div class="cont-info">
+                                     	<h1>WWZ: Guerra Mundial</h1>
+                                        <a><b> Género:</b> Ação | Fantasia | Ficção Cientifica</a>
+                                        <a><b> Sinopse:</b>
+                                       A história de WWZ: Guerra Mundial gira em torno de Gerry Lane, um funcionário da Nações Unidas, que atravessa o planeta numa corrida contra o tempo para travar uma pandemia que está a derrubar exércitos e governos, ameaçando dizimar a própria humanidade.
+ </a></div>
+                          </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/h58irlFbTz0?theme=light&color=whitefs=1&amp;autoplay=1" title=" WWZ: Guerra Mundial "></a>
+                            <a href="#"><div class="icon-play"></div></a>
+                        </div>
+                      <div class="mov-title"><a href="#"> WWZ: Guerra Mundial </a></div>
+                    </div>
+					</div>
+                    
+                    
+					<div class="ca-item ">
+                    <div class="media"><img src="css/images/Covers/thumb20.jpg" alt="Projeto X - Uma Festa Fora de Controle" /><div class="thumb"></div>
+                        <div class="cont-icon">
+                            <div class="icon-info">
+                                    <div id="arrow"></div>                                     
+                                    <div class="cont-info">
+                                     	<h1>Projeto X - Uma Festa Fora de Controle</h1>
+                                        <a><b> Género:</b> Comédia </a>
+                                        <a><b> Sinopse:</b>
+                                       Thomas (Thomas Mann), Costa (Oliver Cooper) e JB (Jonathan Daniel Brown) são grandes amigos. Eles não são populares no colégio nem têm namorada. Sonhando dar uma virada na situação, eles planejam transformar o aniversário de Thomas em um acontecimento épico. Para tanto realizam uma grande festa na casa do aniversariante, aproveitando o fato que os pais dele estarão viajando no fim de semana.</a></div>
+                          </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/kFwGmQIe-rU?theme=light&color=whitefs=1&amp;autoplay=1" title="Projeto X - Uma Festa Fora de Controle"></a>
+                            <a href="#"><div class="icon-play"></div></a>
+                        </div>
+                      <div class="mov-title"><a href="#"> WWZ: Guerra Mundial </a></div>
+                    </div>
+					</div>
+                    
+                    
+				</div>
+			</div>
+		<script type="text/javascript">
+			$('#ca-container').contentcarousel();
+		</script>
+      </div>
+      
+            <div class="slider-carousel dv-style">
+                <h1>Mais Vistos</h1>
+        				<div id="ca-container2" class="ca-container">
+				<div class="ca-wrapper">
+                
+                    <div class="ca-item ">
+                        <div class="media"><img src="css/images/Covers/thumb6.jpg" alt="Como treinar o Teu Dragão 2" /><div class="thumb"></div>
+                            <div class="cont-icon">
+                                <div class="icon-info">
+                                        <div id="arrow"></div>                                     
+                                        <div class="cont-info">
+                                            <h1>Como treinar o Teu Dragão 2</h1>
+                                            <a><b> Género:</b> Animação | Aventura | Familiar </a>
+                                            <a><b> Sinopse:</b>
+                                           O segundo capítulo da épica trilogia Como Treinar o seu Dragão retorna ao mundo de Soluço e seu fiel dragão Banguela. Enquanto Astrid, Snotface e o resto da turma competem uns com os outros em corridas de dragão (o novo esporte da ilha), Soluço e Banguela descobrem novas terras e exploram novos mundos. Quando em uma de suas aventuras descobrem uma caverna secreta, onde centenas de dragões selvagens vivem, os dois amigos acabam no meio de uma batalha.</a></div>
+                              </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/CS1Qtw4ykY?theme=light&color=whitefs=1&amp;autoplay=1" title="Como treinar o Teu Dragão 2"></a>
+                                <a href="#"><div class="icon-play"></div></a>
+                            </div>
+                          <div class="mov-title"><a href="#">Como treinar o Teu Dragão 2 </a></div>
+                        </div>
+                  </div>
+                        
+                    <div class="ca-item ">
+                        <div class="media"><img src="css/images/Covers/thumb8.jpg" alt="X-Men: Dias de um Futuro Esquecido" /><div class="thumb"></div>
+                            <div class="cont-icon">
+                                <div class="icon-info">
+                                        <div id="arrow"></div>                                     
+                                        <div class="cont-info">
+                                            <h1>X-Men: Dias de um Futuro Esquecido</h1>
+                                            <a><b> Género:</b> Ação | Ficção Cientifica </a>
+                                            <a><b> Sinopse:</b>
+                                        O último grupo dos X-Men vai entrar numa guerra pela sobrevivência das espécies em dois períodos de tempo distintos, em “X-Men: Dias de Um Futuro Esquecido”. As tão amadas personagens da trilogia original do filme "X-Men" vão unir forças e enviar Wolverine ao passado para alterar um acontecimento histórico, que poderá ter um importante impacto em humanos e mutantes. A maior produção de sempre de X-Men, realizada por Bryan Singer, com um elenco incomparável.</a></div>
+                              </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/IqeGF5wDzxA?theme=light&color=whitefs=1&amp;autoplay=1" title="X-Men: Dias de um Futuro Esquecido"></a>
+                                <a href="#"><div class="icon-play"></div></a>
+                            </div>
+                          <div class="mov-title"><a href="#">X-Men: Dias de um Futuro Esquecido</a></div>
+                        </div>
+                  </div>
+                        
+                    <div class="ca-item ">
+                        <div class="media"><img src="css/images/Covers/thumb11.jpg" alt="American Pie: O Reencontro" /><div class="thumb"></div>
+                            <div class="cont-icon">
+                                <div class="icon-info">
+                                        <div id="arrow"></div>                                     
+                                        <div class="cont-info">
+                                            <h1>American Pie: O Reencontro</h1>
+                                            <a><b> Género:</b> Comédia </a>
+                                            <a><b> Sinopse:</b>
+                                      Os personagens de American Pie se reúnem dez anos após a formatura e contam os diferentes rumos que suas vidas tomaram. Alguns deles estão aprendendo a cuidar de filhos, e outros estão divorciados. No entanto, Finch continua lembrando das noites de paixão com a mãe de Stifler.</a></div>
+                              </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/NAJJk9Ne_8E?theme=light&color=whitefs=1&amp;autoplay=1" title="American Pie: O Reencontro"></a>
+                                <a href="#"><div class="icon-play"></div></a>
+                            </div>
+                          <div class="mov-title"><a href="#">American Pie: O Reencontro</a></div>
+                        </div>
+                  </div>
+    
+                    <div class="ca-item ">
+                        <div class="media"><img src="css/images/Covers/thumb7.jpg" alt="O Sobrevivente" /><div class="thumb"></div>
+                            <div class="cont-icon">
+                                <div class="icon-info">
+                                        <div id="arrow"></div>                                     
+                                        <div class="cont-info">
+                                            <h1>O Sobrevivente</h1>
+                                            <a><b> Género:</b> Ação | Aventura </a>
+                                            <a><b> Sinopse:</b>
+                                     Baseado em fatos reais, O Grande Herói conta a incrível história de quatro soldados da Marinha em uma missão para neutralizar uma operação do alto escalão da Al-Qaeda, mas que sofrem uma emboscada nas montanhas do Afeganistão. Frente a uma decisão moral difícil, o grupo fica isolado, sem socorro e cercado por um forte grupo Talibã, tendo que encontrar uma reserva de energia e resiliência que os faça resistir.</a></div>
+                              </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/O60VVhnt_nw?theme=light&color=whitefs=1&amp;autoplay=1" title="O Sobrevivente"></a>
+                                <a href="#"><div class="icon-play"></div></a>
+                            </div>
+                          <div class="mov-title"><a href="#">O Sobrevivente</a></div>
+                        </div>
+                  </div>
+
+                    <div class="ca-item ">
+                        <div class="media"><img src="css/images/Covers/thumb10.jpg" alt="Mestres da Ilusão" /><div class="thumb"></div>
+                            <div class="cont-icon">
+                                <div class="icon-info">
+                                        <div id="arrow"></div>                                     
+                                        <div class="cont-info">
+                                            <h1>Mestres da Ilusão</h1>
+                                            <a><b> Género:</b> Thriller </a>
+                                            <a><b> Sinopse:</b>
+                                        Uma equipa de elite do FBI num jogo de "gato e rato" contra "Os Quatro Cavaleiros ", uma super equipa que reúne os maiores ilusionistas do mundo. Durante os seus espetáculos "Os Quatro Cavaleiros" executam uma série de ousados golpes contra corruptos líderes do mundo dos negócios, provocando depois uma “chuva” dos lucros roubados sobre a audiência, permanecendo sempre um passo à frente da lei.</a></div>
+                              </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/vk3yhfqCxIw?theme=light&color=whitefs=1&amp;autoplay=1" title="Mestres da Ilusão"></a>
+                                <a href="#"><div class="icon-play"></div></a>
+                            </div>
+                          <div class="mov-title"><a href="#">Mestres da Ilusão</a></div>
+                        </div>
+                  </div>
+                        
+                    <div class="ca-item ">
+                        <div class="media"><img src="css/images/Covers/thumb13.jpg" alt="Agentes Universitários" /><div class="thumb"></div>
+                            <div class="cont-icon">
+                                <div class="icon-info">
+                                        <div id="arrow"></div>                                     
+                                        <div class="cont-info">
+                                            <h1>Agentes Universitários</h1>
+                                            <a><b> Género:</b> Ação | Aventura | Comédia </a>
+                                            <a><b> Sinopse:</b>
+                                     Após conseguirem terminar a escola secundária (por duas vezes...), grandes mudanças estão a caminho nas vidas dos policias Schmidt e Jenko, quando estes iniciam uma missão - altamente à paisana! - numa Universidade local.Mas quando Jenko conhece a alma gémea na equipa de futebol, e Schmidt se infiltra no grupo de arte boémia, esta parceria parece estar em risco… </a></div>
+                              </div>	<a id="icon-trailer" class="trailer" href="http://www.youtube.com/v/Apw5BgobA3Y?theme=light&color=whitefs=1&amp;autoplay=1" title="Agentes Universitários"></a>
+                                <a href="#"><div class="icon-play"></div></a>
+                            </div>
+                          <div class="mov-title"><a href="#">Agentes Universitários</a></div>
+                        </div>
+                  </div>
+                    
+				</div>
+			</div>
+		<script type="text/javascript">
+			$('#ca-container2').contentcarousel();
+		</script>
+        
+      </div>
+
+                        
+
+	<div class="news dv-style">
+        <h1>Noticias Recentes</h1>
+    	<div class="notice-box"> 
+        <div class="img_notice"><div class="thumb2"></div><img src="css/images/notice1.jpg" alt="nome-da-noticia"/></div>
+            <a href="notices/A-verdadeira-razão-para-que-Elsa-foi-a-heroina-do-filme-Frozen.html"  class="title"><h4>A verdadeira razão para que Elsa foi a heroina do filme Frozen!  </h4></a>
+                <div class="not-text">
+                    <a>Vamos pensar de volta a um tempo antes congelado tornou-se uma sensação em toda a toda forma 
+                    de cultura pop, do cinema , a música , a televisão e teatro . Antes que o filme estreou ...</a>
+                </div>
+            <div class="more"><a href="notices/A-verdadeira-razão-para-que-Elsa-foi-a-heroina-do-filme-Frozen.html"><b>Saber mais </b></a></div>
+      </div>
+      
+    	<div class="notice-box">
+        	<div class="img_notice"><div class="thumb2"></div><img src="css/images/notice2.jpg"alt="nome-da-noticia"/></div>
+            <a href="" class="title"><h4>Este amado ator do senhor dos anéis estará no Hobbit 3! </h4></a>
+                <div class="not-text">
+                     <a>Quando O Hobbit: Uma Jornada Inesperada começou a se desenrolar nas telas de todo o mundo em 2012,
+                     ele cumprimentou os fãs com os rostos familiares de Ian Holm e Elijah Wood como Bilbo e Frodo Bolseiro....
+                    </a>
+                </div>
+              <div class="more"><a href="notices/Este-amado-ator-do-senhor-dos-anéis-estará-no-Hobbit-3.html"><b>Saber mais </b></a></div>
+      </div>
+      
+    	<div class="notice-box">
+        <div class="img_notice"><div class="thumb2"></div><img src="css/images/notice3.jpg" alt="nome-da-noticia"/></div>
+            <a href="notices/10-personagens-que-precisam-dos-seus-própios-filmes.html" class="title"><h4>10 personagens que precisam dos seus própios filmes! </h4></a>
+                <div class="not-text">
+                    <a>De vez em quando, um personagem do filme em um papel de apoio ou é extremamente bem escrito ou 
+                    então subscrito mas cheia de promessas, que merecem uma imagem própria. Nem sempre acontece, mas de vez 
+                    em quando as orações do público ...
+                    </a>
+          </div>
+            <div class="more"><a href="notices/10-personagens-que-precisam-dos-seus-própios-filmes.html"><b>Saber mais </b></a></div>
+      </div>
+    </div>
+ 
+ <!-- fim do Body-->
+     </div>
+    
+    </div>
+    <hr>
+    <div class="sub_footer">
+    	<div class="info_footer">
+            <div class="genres">
+            <br>
+                <h4>Géneros</h4>
+                   <li> <a href="#"> Ação  </a></li>
+                   <li> <a href="#"> Animação  </a></li>
+                   <li> <a href="#"> Aventura  </a></li>
+                   <li> <a href="#"> Comédia  </a></li>
+                   <li> <a href="#"> Comédia Romantica  </a></li>
+                   <li> <a href="#"> Corrida  </a></li>
+                   <li> <a href="#"> Documentário  </a></li>
+                   <li> <a href="#"> Drama  </a></li>
+                   <li> <a href="#"> Ficção Cientifica  </a></li>
+                   <li> <a href="#"> Guerra  </a></li>
+                   <li> <a href="#"> Nacional  </a></li>
+                   <li> <a href="#"> Policial  </a></li>
+                   <li> <a href="#"> Romance  </a></li>
+                   <li> <a href="#"> Suspense  </a></li>
+                   <li> <a href="#"> Terror  </a></li>
+            </div>
+            
+        <div class="social">
+        	<h4>Siga-nos</h4><!-- Meter transição -->
+              <a href="#"><div class="logo2"><img src="css/images/Facebook.png" alt="fc" /></div></a>
+              <a href="#"><div class="logo2"><img src="css/images/Twitter.png" alt="tt" /></div></a>
+              <a href="#"><div class="logo2"><img src="css/images/Youtube.png" alt="yt" /></div></a>
+        </div>
+        
+        
+       </div>
+    </div>
+    
+    <hr>
+    <div class="footer"><a>Onmovies &#169; 2014 | Todos os direitos reservados</a></div>
+    
+     <a href="#top"  id="top"><div class="visibility "  id="back_to_top" ></div></a> 
+    
+</div>
+
+   
+
+
+</body>
+</html>
