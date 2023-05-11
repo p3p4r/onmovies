@@ -6,7 +6,7 @@
     <img src="Logo/150x0150.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">OnMovies -   Our movies at home</h3>
+  <h3 align="center">OnMovies -   Your movies at home</h3>
 
   <p align="center">
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
